@@ -7,7 +7,7 @@ err() {
 
 curdir=`dirname "$0"`
 
-if [ "$QT_QPA_PLATFORM" == "wayland-egl" ] ; then
+if [ "$QT_QPA_PLATFORM" == wayland* ] ; then
     # Running under Wayland
 
     if [ -d "$curdir/qt5-install" ] ; then
